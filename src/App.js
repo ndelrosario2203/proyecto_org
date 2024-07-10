@@ -15,7 +15,7 @@ function App() {
   return (
     <div>
       <Header />
-      { mostrarFormulario === true ? <Formulario /> : <div /> }
+      { mostrarFormulario ? <Formulario /> : <></> }
       
       <Organizacion cambiarMostrar={cambiarMostrar} />
     </div>
