@@ -6,7 +6,7 @@ import Formulario from './components/Formulario/Formulario';
 import Organizacion from './components/Organizacion';
 import Equipo from "./components/Equipo";
 import Footer from "./components/Footer";
-import { Analytics } from "@vercel/analytics/react"
+
 
 function App() {
 
@@ -185,7 +185,6 @@ function App() {
       }
 
       <Footer />
-      <Analytics />
     </div>
   );
 }
