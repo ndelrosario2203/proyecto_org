@@ -9,15 +9,17 @@ const CampoTexto = (props) =>{
         props.actualizarValor(e.target.value);
     }
 
+    const {type = "text"} = props
 
     const placeHolderModificado = `${props.placeHolder}...`
-    return <div className="campo-texto">
+    return <div className={`campo campo-${type}`}>
         <label>{props.titulo}</label>
         <input 
             placeholder={placeHolderModificado} 
             required={props.required} 
             value={props.valor}
             onChange={manejarCambios}
+            type={type}
         />
     </div>
 

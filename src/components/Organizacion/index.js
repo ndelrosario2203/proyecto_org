@@ -1,5 +1,4 @@
-import { useState } from "react"
-import "./Organizacion.css"
+        import "./Organizacion.css"
 
 
 const Organizacion = (props) =>{
@@ -14,7 +13,7 @@ const Organizacion = (props) =>{
         <h3 className="title">
             Mi Organización
         </h3>
-        <img src="./img/add.png" alt="add" onClick={props.cambiarMostrar}/>
+        <img src={process.env.PUBLIC_URL + "/img/add.png"} alt="add" onClick={props.cambiarMostrar}/>
     </section>
 }
 
