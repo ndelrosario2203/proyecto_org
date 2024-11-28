@@ -4,6 +4,7 @@ import "./Formulario.css"
 import CampoTexto from "../CampoTexto"
 import ListaOpciones from "../ListaOpciones"
 import Boton from "../Boton"
+import SignaturePad from "../Firma";
 
 const Formulario = (props) => {
 
@@ -67,6 +68,7 @@ const Formulario = (props) => {
                     actualizarValor={actualizarEquipo}
                     equipos = {props.equipos}
                 />
+                <SignaturePad/>
                 <Boton texto="Crear" />
             
         </form>
